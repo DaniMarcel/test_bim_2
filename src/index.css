@@ -1,0 +1,29 @@
+.options-menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 100;
+  }
+  
+  .phone-menu-toggler {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 100;
+  }
+  
+  @media (max-width: 768px) {
+    .options-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .options-menu-visible {
+      transform: translateX(0);
+    }
+  
+    .phone-menu-toggler {
+      display: block;
+    }
+  }
